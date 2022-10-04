@@ -1,0 +1,111 @@
+#backtoTop {
+    cursor: pointer;
+    z-index: 3;
+    color: gray;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 4rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    transition: all ease 0.5s;
+    visibility: hidden;
+  }
+  
+#backtoTop:hover {
+  color: dimgray;
+}
+
+#backtoTop:hover::after {
+  position: absolute;
+  content: "back to top";
+  top:85%;
+  left: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.15;
+}
+
+#carouselExampleIndicators{
+  width:50%;
+}
+
+#page {
+  padding-bottom: 6%;
+}
+
+.show {
+  visibility: visible !important;
+  animation: show linear 1s;
+}
+
+.remove {
+  transform: scale(0);
+  transition: all ease 1s;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0)
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2)
+  }
+  75% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-tabs .nav-link.active {
+    background-color: gray;
+    color: white
+}
+
+.nav-tabs .nav-link {
+    background-color: white;
+    color: grey;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    outline: black;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+}
+
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#leftTop, #rightTop{
+  position: relative;
+}
+
+#leftBot, #rightBot{
+  margin-top: 4%;
+  position: absolute;
+}

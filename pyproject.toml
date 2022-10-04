@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "repl_python3_Assignment-12-Binary-Encoding"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.0.2"
+networkx = "^2.8.5"
+html-img = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
